@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group 'org.truongpq'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    annotationProcessor project(":Compiler")
+    implementation project(":Annotation")
+}
